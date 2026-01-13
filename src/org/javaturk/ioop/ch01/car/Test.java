@@ -10,16 +10,16 @@ package org.javaturk.ioop.ch01.car;
  */
 public class Test {
 
-	public static void main(String[] args) {
+	 void main() {
 		Car car1 = new Car();
 
-		System.out.println("When the car stands still.");
+//		System.out.println("When the car stands still.");
 		car1.make = "Mercedes";
 		car1.model = "C200";
-		car1.year = "2023";
+		car1.year = "2026";
 		car1.distance = 0;
 		car1.speed = 0;
-		System.out.println(car1.info());
+		IO.println(car1.info());
 
 		System.out.println("\nWhen the car moves.");
 		car1.accelerate(125);
@@ -33,7 +33,7 @@ public class Test {
 		car2.make = "BMW";
 		car2.model = "i8";
 		car2.year = "2017";
-		car2.distance = 10_000;
+		car2.distance = 100_000;
 		car2.speed = 160;
 		System.out.println(car2.info());
 

@@ -1,4 +1,5 @@
 package org.javaturk.ioop.ch01.circle.circle1;
+
 public class Circle {
 
     double calculateArea(float radius) {
