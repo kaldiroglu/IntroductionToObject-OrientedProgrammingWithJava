@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ex.ch08;
+package org.javaturk.ioop.ex.ch01;
 
 public class FootballPlayerTest {
     /*

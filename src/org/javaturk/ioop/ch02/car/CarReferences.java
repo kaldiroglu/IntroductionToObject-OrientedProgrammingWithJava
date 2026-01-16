@@ -16,7 +16,7 @@ public class CarReferences {
 		Car car1 = new Car();
 		car1.make = "Mercedes";
 		car1.model = "C200";
-		car1.year = "2023";
+		car1.year = "2026";
 		car1.distance = 0;
 		car1.speed = 0;
 		System.out.println("car1:   " + car1.getInfo());
@@ -49,7 +49,7 @@ public class CarReferences {
 		System.out.println("\ncar2:   " + car2.getInfo());
 		System.out.println("tmpCar: " + tmpCar.getInfo());
 
-		car1 = null;
+//		car1 = null;
 //		System.out.println(car1.getInfo());
 //		car1.accelerate(150);
 
@@ -75,10 +75,14 @@ public class CarReferences {
 		Car myBMW = bmwCF.getMeACar();
 //		myBMW.go(150);
 
-		if(myBMW != null)
+		if(myBMW != null) {
 			myBMW.accelerate(200);
+			System.out.println(myBMW.getInfo());
+		}
 		else
 			System.out.println("Null kardeşim!");
+
+
 	}
 }
 
@@ -87,7 +91,10 @@ class CarFactory{
 	
 	public Car getMeACar() {
 		Car car = null;
-		
+//		Car car = new Car();
+//		car.make = "BMW";
+
+//
 		return car;
 	}
 }

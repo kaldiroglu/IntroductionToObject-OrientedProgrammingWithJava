@@ -21,8 +21,8 @@ public class SystemInExample {
         InputStream in = System.in;
         System.out.print("Please enter a character:"); // Enter a or ğ (Latin small letter g with breve, Unicode decimal 287, binary 0000_0001_0001_1111 or hex \u011f) or just hit return
         int aByte = in.read();
-        System.out.println(STR."Byte read: \{aByte}");
-        System.out.println(STR."Char read: \{(char) aByte}");
+        System.out.println("Byte read: " + aByte);
+        System.out.println("Char read: " + (char) aByte);
         System.out.println("The end");
     }
 
@@ -38,15 +38,15 @@ public class SystemInExample {
         bytes[1] = (byte) anotherByte;
         String string = new String(bytes);
         if (string.length() == 1) {
-            System.out.println(STR."Char read: \{string}");
+            System.out.println("Char read: " + string);
             char charRead = string.charAt(0);
-            System.out.println(STR."Integer read: \{(int) charRead}");
+            System.out.println("Integer read: " + (int) charRead);
         } else {
-            System.out.println(STR."Chars read: \{string}");
+            System.out.println("Chars read: " + string);
             char firstCharacter = string.charAt(0);
-            System.out.println(STR."Integer read: \{(int) firstCharacter}");
+            System.out.println("Integer read: " + (int) firstCharacter);
             char secondCharacter = string.charAt(1);
-            System.out.println(STR."Integer read: \{(int) secondCharacter}");
+            System.out.println("Integer read: " + (int) secondCharacter);
         }
         System.out.println("The end");
     }
@@ -59,15 +59,15 @@ public class SystemInExample {
         byte[] bytes = in.readNBytes(2);
         String string = new String(bytes);
         if (string.length() == 1) {
-            System.out.println(STR."Char read: \{string}");
+            System.out.println("Char read: " + string);
             char charRead = string.charAt(0);
-            System.out.println(STR."Integer read: \{(int) charRead}");
+            System.out.println("Integer read: " + (int) charRead);
         } else {
-            System.out.println(STR."Chars read: \{string}");
+            System.out.println("Chars read: " + string);
             char firstCharacter = string.charAt(0);
-            System.out.println(STR."Integer read: \{(int) firstCharacter}");
+            System.out.println("Integer read: " + (int) firstCharacter);
             char secondCharacter = string.charAt(1);
-            System.out.println(STR."Integer read: \{(int) secondCharacter}");
+            System.out.println("Integer read: " + (int) secondCharacter);
         }
     }
 
@@ -77,9 +77,9 @@ public class SystemInExample {
         System.out.print("Please enter characters:");
         byte[] bytes = new byte[1000];
         int byteCount = in.read(bytes);
-        System.out.println(STR."Number of bytes read: \{byteCount}");
+        System.out.println("Number of bytes read: " + byteCount);
         String string = new String(bytes);
-        System.out.println(STR."String read: \{string}");
+        System.out.println("String read: " + string);
     }
 
 
@@ -90,9 +90,9 @@ public class SystemInExample {
         System.out.print("Please enter characters:");
         byte[] bytes = new byte[15];
         bytes = in.readNBytes(15);
-        System.out.println(STR."Number of bytes read: \{bytes.length}");
+        System.out.println("Number of bytes read: " + bytes.length);
         String string = new String(bytes);
-        System.out.println(STR."String read: \{string}");
+        System.out.println("String read: " + string);
     }
 
     public static void readAllBytes() throws IOException {
@@ -101,7 +101,7 @@ public class SystemInExample {
         System.out.print("Please enter characters:");
         byte[] bytes = in.readAllBytes();
         String string = new String(bytes);
-        System.out.println(STR."String read: \{string}");
+        System.out.println("String read: " + string);
     }
 
     public static void keepReading1() throws IOException {

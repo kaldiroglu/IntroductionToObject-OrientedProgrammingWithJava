@@ -18,7 +18,7 @@ public class ConsoleExample {
         if (console != null) {
             System.out.println("Please write something: ");
             String line = console.readLine();
-            System.out.println(STR."You've written: \{line}");
+            System.out.println("You've written: " + line);
         } else
             System.out.println("No Console exists!");
     }
@@ -28,7 +28,7 @@ public class ConsoleExample {
         Console console = System.console();
         if (console != null) {
             String line = console.readLine("Please  write something: ");
-            System.out.println(STR."You've written: \{line}");
+            System.out.println("You've written: " + line);
         } else
             System.out.println("Console is null!");
     }
@@ -49,9 +49,9 @@ public class ConsoleExample {
         if (console != null) {
             System.out.println("Please enter your password: ");
             char[] password = console.readPassword();
-            System.out.println(STR."Your password: \{password}");
+            System.out.println("Your password: " + password);
             String passwordString = new String(password);
-            System.out.println(STR."Your password: \{passwordString}");
+            System.out.println("Your password: " + passwordString);
         } else
             System.out.println("Console is null!");
     }
@@ -61,9 +61,9 @@ public class ConsoleExample {
         Console console = System.console();
         if (console != null) {
             char[] password = console.readPassword("Please enter your password: ");
-            System.out.println(STR."Your password: \{password}");
+            System.out.println("Your password: " + password);
             String passwordString = new String(password);
-            System.out.println(STR."Your password: \{passwordString}");
+            System.out.println("Your password: " + passwordString);
         } else
             System.out.println("Console is null!");
     }

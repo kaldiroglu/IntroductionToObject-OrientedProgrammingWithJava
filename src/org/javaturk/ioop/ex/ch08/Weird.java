@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ex.ch20;
+package org.javaturk.ioop.ex.ch08;
 
 public class Weird {
 	static int a = 10;
