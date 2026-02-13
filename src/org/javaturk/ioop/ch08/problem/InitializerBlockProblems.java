@@ -32,6 +32,12 @@ public class InitializerBlockProblems {
 	
 	 static{
 //		 b = {true, true, false};
+
+		 // Only can do this
+		 b = new boolean[3];
+		 b[0] = true;
+		 b[1] = true;
+		 b[2] = false;
 	 }
 	
 	int t = 10;

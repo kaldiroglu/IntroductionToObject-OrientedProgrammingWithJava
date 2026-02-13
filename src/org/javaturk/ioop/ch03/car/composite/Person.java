@@ -18,7 +18,7 @@ public class Person {
 	
 	public String getInfo(){
 		String info = "Person Info: " + tckn + " " + firstName + " " + lastName;
-		if( vehicle != null)
+		if(vehicle != null)
 				info += " and has a car: " + vehicle.getInfo();
 		else
 			info += " and has no car.";

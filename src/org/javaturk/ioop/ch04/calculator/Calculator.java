@@ -45,7 +45,6 @@ public class Calculator {
 	}
 
 	public double divide(int first, int second) {
-		String s;
 		return (double)first / second;
 	}
 }

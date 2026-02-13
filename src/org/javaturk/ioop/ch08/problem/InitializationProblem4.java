@@ -16,8 +16,9 @@ public class InitializationProblem4 {
 
 	double coefficient = LocalTime.now().isBefore(LocalTime.NOON) ? 2 : 4;
 	
-	// Where to initialize the static array? Only a static initialization method!
+	// Where to initialize the static array? Only in a static initialization method!
 	static int[] ints = new int[10];
+//	static int[] ints = initializeArray();
 
 	InitializationProblem4() {
 		name = "default";
@@ -32,10 +33,12 @@ public class InitializationProblem4 {
 //			ints[i] = (i + 1) * 10;
 	}
 	
-	static void initializeArray() {
+	static int[] initializeArray() {
 		System.out.println("\nInitializing the static array.");
+		ints = new int[10];
 		for (int i = 0; i < ints.length; i++)
 			ints[i] = (i + 1) * 10;
+		return ints;
 	}
 	
 	public static void main(String[] args) {

@@ -7,6 +7,7 @@ public class Employee {
 	int id;
 	String firstName;
 	String lastName;
+
 	LocalDate birthDate;
 	float salary;
 	String department = "No department yet!";

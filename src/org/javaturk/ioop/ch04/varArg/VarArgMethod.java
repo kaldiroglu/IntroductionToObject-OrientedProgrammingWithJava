@@ -14,14 +14,14 @@ public class VarArgMethod {
 	// main as var arg method
 	public static void main(String... args) {
 
-		calculateAverage(4, 3);
-		calculateAverage(4, 3, 8);
+//		calculateAverage(4, 3);
+//		calculateAverage(4, 3, 8);
 
 		int a[] = { 15, 25, 35, 45, 55, 65 };
-		calculateAverageWithArray(a);
+//		calculateAverageWithArray(a);
 
 		int b[] = { 15, 25, 35, 45, 55, 65, 75, 86 };
-		calculateAverageWithArray(b);
+//		calculateAverageWithArray(b);
 
 		average(); // Calls with no argument
 		average(1);
@@ -62,7 +62,7 @@ public class VarArgMethod {
 			sum += x;
 			i++;
 		}
-
+		System.out.println("i: " + i);
 		System.out.println("Average: " + (double) sum / i);
 	}
 

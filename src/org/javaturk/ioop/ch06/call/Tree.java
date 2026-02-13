@@ -10,11 +10,12 @@ public class Tree {
 //      printInfo();
         type = newType;
         height = newHeight;
-        System.out.println("Tree(String newType, float newHeight)");
+        System.out.println("\n ===>>>Tree(String newType, float newHeight)");
         printInfo();
     }
 
     Tree(String newType) {
+        System.out.println("dsfdsfs");
         this(newType, 1.0f);
     }
 
@@ -29,7 +30,7 @@ public class Tree {
     }
 
     public void printInfo() {
-
+//        this("Pine", 1.0f);
         System.out.println("\nTree Info:");
         System.out.println("Type: " + type);
         System.out.println("Height: " + height);

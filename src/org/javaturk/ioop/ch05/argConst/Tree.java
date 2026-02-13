@@ -25,9 +25,10 @@ public class Tree {
 	
 	public static void main(String[] args) {
 		Tree tree1 = new Tree("Pine", 2.0f);
-//		tree1.height = 20;
-		tree1.type = "Goknar";
 		tree1.printInfo();
+//		tree1.height = 20;
+//		tree1.type = "Goknar";
+//		tree1.printInfo();
 
 		Tree tree2 = new Tree("Oak", 5.5f);
 		tree2.printInfo();
@@ -35,6 +36,6 @@ public class Tree {
 		Tree tree3 = new Tree(null, 5.5f);
 		tree3.printInfo();
 		
-//		Tree tree3 = new Tree();
+//		Tree tree4 = new Tree();
 	}
 }

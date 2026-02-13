@@ -9,6 +9,7 @@ package org.javaturk.ioop.ch10.packageA;
  *      </p>
  */
 public class ClassA {
+	X y;
 
 //	ClassX x1; // Error!
 	org.javaturk.ioop.ch10.packageX.ClassX x;

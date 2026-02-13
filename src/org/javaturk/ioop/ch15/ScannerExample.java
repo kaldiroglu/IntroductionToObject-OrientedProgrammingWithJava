@@ -10,7 +10,8 @@ public class ScannerExample {
 //        readInfo();
 //        readAnything();
 //        readNextAndNextLine();
-        calculateSum();
+//        calculateSum();
+        useDelimiter();
     }
 
     public static void readInfo() {
@@ -100,5 +101,14 @@ public class ScannerExample {
         s.close();
 
         System.out.println("Sum of all numbers = " + sum);
+    }
+
+    public static void useDelimiter(){
+        String s = "1,2,3,4,5";
+        Scanner sc = new Scanner(s);
+        sc.useDelimiter(",");
+        while(sc.hasNext()){
+            System.out.println(sc.nextInt());
+        }
     }
 }

@@ -3,11 +3,12 @@ package org.javaturk.ioop.ch07.main;
 import java.util.Random;
 
 public class GreetingClass {
+
     Random random = new Random();
 
-    String start = "*** GreetingClass Example ***";
+    String start = "*** Greeting Example ***";
 
-    public void main() {
+    public  void main() {
         System.out.println(start);
         saySalam();
         sayHello();
@@ -28,3 +29,7 @@ public class GreetingClass {
             System.out.println(h.sayHello("Jane"));
     }
 }
+
+
+ 
+

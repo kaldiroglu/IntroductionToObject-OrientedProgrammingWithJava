@@ -20,10 +20,10 @@ public class FinalParameter {
 		car.speedUp(80);
 		car.setOwner("Zeynep");
 
-		aMethod(3, "java");
+//		aMethod(3, "java");
 	}
 
-	static void aMethod(final int arg1, final String arg2){
-		System.out.println(arg1 + " " + arg2);
-	}
+//	static void aMethod(final int arg1, final String arg2){
+//		System.out.println(arg1 + " " + arg2);
+//	}
 }

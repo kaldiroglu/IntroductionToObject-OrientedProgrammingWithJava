@@ -12,11 +12,11 @@ public class ObjectConstruction {
 
 	public static void main(String[] args) {
 		ClassB b;
-////
+//////
 		ClassB b1 = new ClassB();
 		System.out.println("******************************");
 		ClassB b2 = new ClassB();
-//		System.out.println("******************************");
+		System.out.println("******************************");
 //		new ClassB(); //.printInfo();
 	}
 }

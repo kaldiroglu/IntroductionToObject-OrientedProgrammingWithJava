@@ -33,7 +33,7 @@ public class CalculatorTest {
 		
 //		System.out.println(calculator.power(2, 5));
 // 		
-//		System.out.println(calculator.mod(36, 5));
+//		System.out.println(calculator.remainder(36, 5));
 //		
 //		System.out.println(calculator.factorial(5));
 	}

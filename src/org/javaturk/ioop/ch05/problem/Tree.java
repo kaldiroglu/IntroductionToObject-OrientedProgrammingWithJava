@@ -6,6 +6,8 @@ public class Tree {
 	float height;
 
 	Tree(String newType, float newHeight) {
+//		That's OK
+		log("Creating a tree of type " + newType + " and height " + newHeight);
 		printInfo();	// That's problem!
 		type = newType;
 		height = newHeight;
@@ -16,6 +18,10 @@ public class Tree {
 		System.out.println("\nTree Info:");
 		System.out.println("Type: " + type);
 		System.out.println("Height: " + height);
+	}
+
+	public void log(String message){
+		System.out.println("Log: " + message);
 	}
 
 	public static void main(String[] args) {

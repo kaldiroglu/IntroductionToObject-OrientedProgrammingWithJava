@@ -1,6 +1,7 @@
 
 package org.javaturk.ioop.ch10.staticImport;
 
+import java.lang.Math;
 import static java.lang.Math.PI;
 import static java.lang.Math.pow;
 import static org.javaturk.ioop.ch10.staticImport.AClass.*;

@@ -12,7 +12,7 @@ public class HeapDemo2 {
     public static void main(String[] args) {
         System.out.println("Enter number of objects:");
         long objectCount = new Scanner(System.in).nextLong();
-        run1(objectCount);
+        run2(objectCount);
     }
 
     public static void run1(long objectCount) {

@@ -15,6 +15,6 @@ public class MightAlreadyHaveBeenAssigned {
     }
 
     MightAlreadyHaveBeenAssigned() {
-        //i = 5; // Uncomment this line to see: Variable 'i' might already have been assigned to
+//        i = 5; // Uncomment this line to see: Variable 'i' might already have been assigned to
     }
 }

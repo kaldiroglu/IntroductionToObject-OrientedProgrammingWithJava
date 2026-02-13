@@ -38,7 +38,7 @@ public class Tree {
 		Tree tree2 = new Tree("Oak");
 		tree2.printInfo();
 
-		Tree tree3 = new Tree(8.0f);
+		Tree tree3 = new Tree(3.0f);
 		tree3.printInfo();
 		
 		Tree tree4 = new Tree();

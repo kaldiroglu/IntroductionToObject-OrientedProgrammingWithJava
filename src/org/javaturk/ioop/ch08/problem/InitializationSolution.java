@@ -42,12 +42,16 @@ public class InitializationSolution {
 		int i;
 		Random random = new Random();
 		int randomInt = random.nextInt();
+		System.out.println(randomInt);
 		randomInt = Math.abs(randomInt);
 		double randomDouble = Math.random();
+		System.out.println();
 		if (randomDouble < 0.5)
 			InitializationSolution.i = randomInt % 9;
 		else
 			InitializationSolution.i = randomInt % 5;
+
+//		this.ratio = 5;
 	}
 
 	InitializationSolution() {

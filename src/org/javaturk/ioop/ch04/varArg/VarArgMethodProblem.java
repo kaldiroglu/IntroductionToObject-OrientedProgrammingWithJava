@@ -5,9 +5,9 @@ public class VarArgMethodProblem {
         int a[] = {2, 3};
 //		f(1, a); // Problem for f(int ... args)
 //		f(1, 2, a); // Problem for f(int ... args)
-        f(new int[]{1, 2, 3});
-
-        f(a);
+//        f(new int[]{1, 2, 3});
+//
+//        f(a);
 
         f(4);
 

@@ -10,9 +10,12 @@ package org.javaturk.ioop.ch03.car.attribute;
  */
 public class Test {
 	public static void main(String[] args) {
-//		String s = null;
+//		String s;
 //		System.out.println(s);
-		// Employee's department
+
+//		int i;
+//		System.out.println(i);
+//		int j = i;
 
 		Car myCar = new Car();
 		// Aymazlık of developer

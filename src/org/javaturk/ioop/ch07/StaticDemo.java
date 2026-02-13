@@ -51,6 +51,7 @@ public class StaticDemo {
 		//j++;
 		aMethod();
 		//f();
+//		this.i = 5;
 	}
 	
 	static void aMethod() {
@@ -64,6 +65,5 @@ public class StaticDemo {
 	}
 
 	void f(){
-
 	}
 }

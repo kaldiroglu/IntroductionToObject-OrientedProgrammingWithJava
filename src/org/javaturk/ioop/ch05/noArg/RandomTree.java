@@ -17,10 +17,10 @@ public class RandomTree {
 		height = produceHeight();
 	}
 
-	RandomTree(String newType) {
-		type = newType;
-		height = produceHeight();
-	}
+//	RandomTree(String newType) {
+//		type = newType;
+//		height = produceHeight();
+//	}
 
 	public void printInfo() {
 		System.out.println("\nTree Info:");
@@ -43,7 +43,7 @@ public class RandomTree {
 		RandomTree tree1 = new RandomTree();
 		tree1.printInfo();
 
-		RandomTree tree2 = new RandomTree("Oak");
-		tree2.printInfo();
+//		RandomTree tree2 = new RandomTree("Oak");
+//		tree2.printInfo();
 	}
 }

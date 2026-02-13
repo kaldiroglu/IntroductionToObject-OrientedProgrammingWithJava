@@ -72,10 +72,10 @@ public class InitializerBlocks {
 		System.out.println("\ns: " + s);
 	}
 
-	public static void main(String[] args) {
+	 public void main(String[] args) {
 		new InitializerBlocks();
 		new InitializerBlocks();
-//		InitializerBlocks ib = new InitializerBlocks();
+		InitializerBlocks ib = new InitializerBlocks();
 //		ib.printInfo();
 	}
 }

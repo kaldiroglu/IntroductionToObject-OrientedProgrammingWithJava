@@ -11,93 +11,98 @@ package org.javaturk.ioop.ch03.car.composite;
 public class Test {
 
 	public static void main(String[] args) {
-		Person zeynep = new Person();
-		zeynep.tckn = "1";
-		zeynep.firstName = "Zeynep";
-		zeynep.lastName = "Kaya";
+		Person person1 = new Person();
+		person1.tckn = "1";
+		person1.firstName = "Zeynep";
+		person1.lastName = "Kaya";
 		
-		Car mercedes = new Car();
-		mercedes.make = "Mercedes";
-		mercedes.model = "E200";
-		mercedes.year = "2011";
-		mercedes.speed = 80;
-		mercedes.distance = 130_000;
+		Car car1 = new Car();
+		car1.make = "Mercedes";
+		car1.model = "E200";
+		car1.year = "2011";
+		car1.speed = 80;
+		car1.distance = 130_000;
 		
-		System.out.println(mercedes.getInfo());
-		System.out.println(zeynep.getInfo());
+		System.out.println(car1.getInfo());
+		System.out.println(person1.getInfo());
 //		
 		System.out.println("*************");
 		
 		//That's how the relationship/association is established.
 		// That's a bi-directional, 1-1 association
-		mercedes.owner = zeynep; // All is of type Person
-		zeynep.vehicle = mercedes; // All is of type Car
+		car1.owner = person1; // All is of type Person
+		person1.vehicle = car1; // All is of type Car
 		
-		mercedes.speed = 100;
-		mercedes.go(10);
+		car1.speed = 100;
+		car1.go(10);
 	
-		System.out.println(mercedes.getInfo());
-		System.out.println(zeynep.getInfo());
+		System.out.println(car1.getInfo());
+		System.out.println(person1.getInfo());
+
+		System.out.println(person1.vehicle.make);
+		System.out.println(person1.vehicle.owner.firstName);
 //		
 		System.out.println("*************");
 		
 		// A car without an owner
-		Car bmw = new Car();
-		bmw.make = "BMW";
-		bmw.model = "i8";
-		bmw.year = "2019";
-		bmw.speed = 0;
-		bmw.distance = 0;
-		System.out.println(bmw.getInfo());
+		Car car2 = new Car();
+		car2.make = "BMW";
+		car2.model = "i8";
+		car2.year = "2019";
+		car2.speed = 0;
+		car2.distance = 0;
+		System.out.println(car2.getInfo());
 		
 		// A person without a car
-		Person ahmet = new Person();
-		ahmet.tckn = "2";
-		ahmet.firstName = "Ahmet";
-		ahmet.lastName = "Ozturk";
-		System.out.println(ahmet.getInfo());
+		Person person2 = new Person();
+		person2.tckn = "2";
+		person2.firstName = "Ahmet";
+		person2.lastName = "Ozturk";
+		System.out.println(person2.getInfo());
 		
 		// Person Ahmet buys BMW i8
-		ahmet.vehicle = bmw;
-		bmw.owner = ahmet;
+		person2.vehicle = car2;
+		car2.owner = person2;
 
 		System.out.println();
 
-		System.out.println(bmw.getInfo());
-		System.out.println(ahmet.getInfo());
+		System.out.println(car2.getInfo());
+		System.out.println(person2.getInfo());
 
 		System.out.println("\nAfter selling the car");
 
-		ahmet.vehicle = null;
-		bmw.owner = null;
-		//mercedes.owner = null;
+		person2.vehicle = null;
+		car2.owner = null;
+		//car1.owner = null;
 		
-		zeynep.vehicle = bmw;
-		bmw.owner = zeynep;
-		System.out.println(ahmet.getInfo());
-		System.out.println(zeynep.getInfo());
+		person1.vehicle = car2;
+		car2.owner = person1;
+		System.out.println(person2.getInfo());
+		System.out.println(person1.getInfo());
 		
-		System.out.println(bmw.getInfo());
-		System.out.println(mercedes.getInfo());
+		System.out.println(car2.getInfo());
+		System.out.println(car1.getInfo());
 //		System.out.println(ahmet.getInfo());
 		
 		System.out.println("\nExchange the vehicles");
-		ahmet.vehicle = mercedes;
-		mercedes.owner = ahmet;
-		zeynep.vehicle = bmw;
-		bmw.owner = zeynep;
+		person2.vehicle = car1;
+		car1.owner = person2;
+		person1.vehicle = car2;
+		car2.owner = person1;
 
-		System.out.println(bmw.getInfo());
-		System.out.println(mercedes.getInfo());
-		System.out.println(zeynep.getInfo());
-		System.out.println(ahmet.getInfo());
+		System.out.println(car2.getInfo());
+		System.out.println(car1.getInfo());
+		System.out.println(person1.getInfo());
+		System.out.println(person2.getInfo());
 		System.out.println();
 		
-		zeynep.vehicle = null;
-		bmw.owner = null;
-		System.out.println(bmw.getInfo());
-		System.out.println(zeynep.getInfo());
+//		person1.vehicle = null;
+//		car2.owner = null;
+		System.out.println(car2.getInfo());
+		System.out.println(person1.getInfo());
 		
-//		System.out.println(zeynep.vehicle.model);
+//		System.out.println(person1.vehicle.owner.firstName);
+		person1.vehicle.owner = null;
+		System.out.println(person1.vehicle.owner.firstName);
 	}
 }
