@@ -55,6 +55,14 @@ public class Poem {
         System.out.println(poem);
     }
 
+    /**
+     * Prints the poem "Leylim Ley" by Sabahattin Ali using a text block.
+     *
+     * This method demonstrates the use of a multi-line text block
+     * to format and display a multi-line poem in a concise and readable way.
+     * The text block preserves the intended layout and indentation of the poem,
+     * providing an aesthetically pleasing output.
+     */
     public static void printPoem4() {
         System.out.println("\nprintPoem4");
         String poem = """

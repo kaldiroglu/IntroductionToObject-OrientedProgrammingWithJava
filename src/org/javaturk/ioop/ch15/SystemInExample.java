@@ -6,7 +6,7 @@ import java.io.InputStream;
 public class SystemInExample {
 
     public static void main(String[] args) throws IOException {
-//        readOneByte();
+        readOneByte();
 //        readTwoBytes1();
 //        readTwoBytes2();
 //        readBytes();
@@ -27,7 +27,7 @@ public class SystemInExample {
     }
 
     public static void readTwoBytes1() throws IOException {
-        //Try with following inputs: a and then  enter, ab, ğ, ğı, ağ
+        //Try with following inputs: a and then enter, ab, ğ, ğı, ağ
         System.out.println("readTwoBytes1()");
         InputStream in = System.in;
         System.out.print("Please enter a character:");
@@ -52,7 +52,7 @@ public class SystemInExample {
     }
 
     public static void readTwoBytes2() throws IOException {
-        //Try with following inputs: a and then  enter, ab, ğ, ğı, ağ
+        //Try with following inputs: a and then enter, ab, ğ, ğı, ağ
         System.out.println("readTwoBytes2()");
         InputStream in = System.in;
         System.out.print("Please enter a character:");

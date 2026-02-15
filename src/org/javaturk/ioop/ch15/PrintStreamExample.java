@@ -9,21 +9,21 @@ import static java.lang.Math.PI;
 public class PrintStreamExample {
 
     public static void main(String[] args) {
-//        print();
-//        formatGeneral();
+        print();
+        formatGeneral();
 //        formatPrimitives();
 //        printMultiplicationTable();
 //        printILoveJavaTable();
 //        formatDate();
-        formatFloat();
+//        formatFloat();
     }
 
     public static void print() {
-        char[] name = {'A', 'K', 'I', 'N'};
+        char[] name = {'J', 'A', 'V', 'A'};
         System.out.print(name);
         System.out.println();
 
-        System.out.print("KALDIROGLU");
+        System.out.print("I love Java");
         System.out.println();
 
         int[] numbers = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
@@ -33,7 +33,7 @@ public class PrintStreamExample {
         boolean b = false;
         System.out.println(b);
 
-        int i = 2023;
+        int i = 2026;
         System.out.print(i);
 
         System.out.println();

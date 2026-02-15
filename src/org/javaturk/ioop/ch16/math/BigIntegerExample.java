@@ -16,17 +16,20 @@ public class BigIntegerExample {
 
 		System.out.println("Sum as big integer: " + sum);
 
-//		System.out.println("*** But this may cause problems. ***");
-		System.out.println("Sum as long:        " + sum.longValue());
-		System.out.println("Sum as int:         " + sum.intValue());
-
-		BigInteger factorial = BigInteger.valueOf(1);
+		BigInteger multiply = BigInteger.valueOf(1);
 		for (int i = 1; i <= limit; i++) {
-			factorial = factorial.multiply(BigInteger.valueOf(i));
+			multiply = multiply.multiply(BigInteger.valueOf(i));
 		}
 
-		System.out.println("Factorial as big integer: " + factorial);
-		System.out.println("Factorial as long:        " + factorial.longValue());
-		System.out.println("Factorial as int:         " + factorial.intValue());
+		System.out.println("Multiplication as big integer: " + multiply);
+
+		System.out.println("\nSum as long:        " + sum.longValue());
+		System.out.println("Sum as int:         " + sum.intValue());
+		System.out.println("Multiplication as long:        " + multiply.longValue());
+		System.out.println("Multiplication as int:         " + multiply.intValue());
+
+		double sumAsDouble = 10.05 + 20.10;
+		sumAsDouble = sumAsDouble * 0.90 * 0.2;
+		System.out.println("Sum as double: " + sumAsDouble);
 	}
 }

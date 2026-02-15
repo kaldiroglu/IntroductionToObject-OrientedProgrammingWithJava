@@ -6,7 +6,7 @@ import java.io.PrintStream;
 public class SystemIO {
 
     public static void main(String[] args) throws IOException {
-//        write();
+        write();
         read();
     }
 

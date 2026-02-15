@@ -3,7 +3,7 @@ package org.javaturk.ioop.ch17.textBlock;
 public class TextBlockAPI {
 
     public static void main(String[] args) {
-//        useString();
+        useString();
         equality();
 //        formatted();
 //        strip();

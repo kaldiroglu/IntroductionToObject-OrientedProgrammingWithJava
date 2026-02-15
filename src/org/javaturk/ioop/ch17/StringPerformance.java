@@ -33,9 +33,10 @@ public class StringPerformance {
 		System.out.println("Enter the number of repeats: ");
 		// 100_000 is a good indicator and 1_000_000 takes more time.
 		int n = sc.nextInt();
-		buildStringWithPlus("Java", n);
+
 		buildStringWithStringBuilder("Java", n);
 		buildStringWithStringBuffer("Java",  n);
+		buildStringWithPlus("Java", n);
 	}
 
 	public static void buildStringWithPlus(String string, int count) {
