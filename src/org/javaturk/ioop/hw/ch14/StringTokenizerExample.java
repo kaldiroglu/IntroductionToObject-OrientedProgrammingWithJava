@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch14;
+package org.javaturk.ioop.hw.ch14;
 
 import java.util.StringTokenizer;
 
