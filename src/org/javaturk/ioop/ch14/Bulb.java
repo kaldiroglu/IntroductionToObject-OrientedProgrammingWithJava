@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch14.javadoc;
+package org.javaturk.ioop.ch14;
 
 /**
  * A <code>Bulb</code> is the bulb in electiricity. This class simulates a bulb. It has a default

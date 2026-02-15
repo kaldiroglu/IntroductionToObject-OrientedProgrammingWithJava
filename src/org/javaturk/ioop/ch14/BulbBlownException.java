@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.javaturk.ioop.ch14.javadoc;
+package org.javaturk.ioop.ch14;
 
 /**
  * This class is an exception and states that the bulb is blown due to a high

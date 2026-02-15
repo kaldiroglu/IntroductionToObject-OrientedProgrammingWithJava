@@ -1,5 +1,5 @@
 
-package org.javaturk.ioop.ch14.javadoc;
+package org.javaturk.ioop.ch14;
 
 /**
  * This class is the test class of the class {@link Bulb}.
