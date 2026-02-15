@@ -1,6 +1,6 @@
 package org.javaturk.ioop.ch12.classAccess;
 
-import org.javaturk.ioop.ch12.classAccess.x.*;
+//import org.javaturk.ioop.ch12.classAccess.x.ClassXX;
 
 /**
  * @author <a href="mailto:akin@javaturk.org">Akin Kaldiroglu</a>
@@ -16,5 +16,5 @@ public class ClassA {
 //  	ClassXX x;
 	
 //	Not visible! Package accessible!
-	ClassZZ z;
+//	ClassZZ z;
 }

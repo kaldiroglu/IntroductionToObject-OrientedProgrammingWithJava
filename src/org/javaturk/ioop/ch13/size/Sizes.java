@@ -1,6 +1,7 @@
-package org.javaturk.ioop.ch25.size;
+package org.javaturk.ioop.ch13.size;
 
-import static org.javaturk.ioop.ch25.size.Size.MEDIUM;
+
+import static org.javaturk.ioop.ch13.size.Size.MEDIUM;
 
 public class Sizes {
 	public static void main(String[] args) {
@@ -19,6 +20,8 @@ public class Sizes {
 		System.out.println("Ordinal: " + size1.ordinal());
 		System.out.println("Abbreviation: " + size1.getAbbreviation());
 		System.out.println("No: " + size1.getNo());
+
+		System.out.println(Size.LARGE.getAbbreviation());
 
 		System.out.println();
 

@@ -1,12 +1,11 @@
 /**
  * 
  */
-package org.javaturk.ioop.ch25.date;
+package org.javaturk.ioop.ch13.date;
 
-import org.javaturk.ioop.ch25.constants.DateConstants;
-import org.javaturk.ioop.ch25.date.dateEnums.DayOfMonth;
-import org.javaturk.ioop.ch25.date.dateEnums.Month;
-import org.javaturk.ioop.ch25.date.dateEnums.Year;
+
+import org.javaturk.ioop.ch13.constants.DateConstants;
+import org.javaturk.ioop.ch13.date.dateEnums.*;
 
 public class DateTest {
 

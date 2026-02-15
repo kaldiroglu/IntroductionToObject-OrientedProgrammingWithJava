@@ -1,7 +1,7 @@
 
-package org.javaturk.ioop.ch25.date;
+package org.javaturk.ioop.ch13.date;
 
-import org.javaturk.ioop.ch25.date.dateEnums.*;
+import org.javaturk.ioop.ch13.date.dateEnums.*;
 
 public class Date4 {
 	

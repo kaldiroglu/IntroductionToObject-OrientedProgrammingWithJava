@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch25.day;
+package org.javaturk.ioop.ch13.day;
 
 public enum Day{
 	 SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;

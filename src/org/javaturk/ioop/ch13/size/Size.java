@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch25.size;
+package org.javaturk.ioop.ch13.size;
 
 enum Size {
 	SMALL("S", 1), MEDIUM("M", 2), LARGE("L", 3), EXTRA_LARGE("XL", 4);

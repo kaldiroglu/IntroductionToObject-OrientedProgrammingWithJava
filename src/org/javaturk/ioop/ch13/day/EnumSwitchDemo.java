@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch25.day;
+package org.javaturk.ioop.ch13.day;
 
 public class EnumSwitchDemo {
 	Day day;

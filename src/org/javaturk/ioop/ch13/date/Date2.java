@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.javaturk.ioop.ch25.date;
+package org.javaturk.ioop.ch13.date;
 
 public class Date2 {
 

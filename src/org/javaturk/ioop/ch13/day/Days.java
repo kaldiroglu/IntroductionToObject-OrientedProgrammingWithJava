@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch25.day;
+package org.javaturk.ioop.ch13.day;
 
 public class Days {
 	public static void main(String[] args) {

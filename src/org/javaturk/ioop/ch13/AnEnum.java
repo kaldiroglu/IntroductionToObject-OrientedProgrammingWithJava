@@ -1,4 +1,4 @@
-package org.javaturk.ioop.ch25;
+package org.javaturk.ioop.ch13;
 
 public enum AnEnum {
     A_CONSTANT, ANOTHER_CONSTANT

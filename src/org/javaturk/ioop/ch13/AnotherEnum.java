@@ -1,6 +1,6 @@
-package org.javaturk.ioop.ch25;
+package org.javaturk.ioop.ch13;
 
-public enum AnotherEnum {
+public enum AnotherEnum{
 	
 	CONSTANT;
 	int i;
@@ -19,9 +19,9 @@ public enum AnotherEnum {
 	
 	public static void main(String[] args) {
 		System.out.println("Selam");
-//		CONSTANT.i = 10;
+		CONSTANT.i = 10;
 		System.out.println(CONSTANT.i);
-//		s = "enummm :)";
+		s = "enummm :)";
 		System.out.println(s);
 	}
 

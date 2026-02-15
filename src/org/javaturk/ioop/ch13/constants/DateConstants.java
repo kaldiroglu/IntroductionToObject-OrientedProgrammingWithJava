@@ -1,5 +1,5 @@
 
-package org.javaturk.ioop.ch25.constants;
+package org.javaturk.ioop.ch13.constants;
 
 public class DateConstants {
 
