@@ -3,11 +3,7 @@ package org.javaturk.ioop.ch13.day;
 public class EnumSwitchDemo {
 	Day day;
 
-	public EnumSwitchDemo(Day day) {
-		this.day = day;
-	}
-
-	public void tellItLikeItIs() {
+	public static void tellItLikeItIs(Day day) {
 		String message = switch (day) {
 		case MONDAY -> "Mondays are bad :(";
 		case FRIDAY -> "Fridays are better :)";
@@ -19,15 +15,9 @@ public class EnumSwitchDemo {
 	}
 
 	public static void main(String[] args) {
-		EnumSwitchDemo firstDay = new EnumSwitchDemo(Day.MONDAY);
-		firstDay.tellItLikeItIs();
-		EnumSwitchDemo thirdDay = new EnumSwitchDemo(Day.WEDNESDAY);
-		thirdDay.tellItLikeItIs();
-		EnumSwitchDemo fifthDay = new EnumSwitchDemo(Day.FRIDAY);
-		fifthDay.tellItLikeItIs();
-		EnumSwitchDemo sixthDay = new EnumSwitchDemo(Day.SATURDAY);
-		sixthDay.tellItLikeItIs();
-		EnumSwitchDemo seventhDay = new EnumSwitchDemo(Day.SUNDAY);
-		seventhDay.tellItLikeItIs();
+		tellItLikeItIs(Day.MONDAY);
+		tellItLikeItIs(Day.WEDNESDAY);
+		tellItLikeItIs(Day.SATURDAY);
+		tellItLikeItIs(Day.SUNDAY);
 	}
 }

@@ -7,8 +7,8 @@ import java.time.ZoneId;
 public class ClockExample {
 
 	public static void main(String[] args) throws InterruptedException {
-		run3();
-
+		run1();
+		run2();
 	}
 
 	static void run1() {
@@ -36,7 +36,7 @@ public class ClockExample {
 		System.out.println(zuluInstant);
 	}
 
-	static void run3() throws InterruptedException {
+	static void run2() throws InterruptedException {
 		
 		for (int i = 0; i < 10; i++) 
 			getLapseTime();
